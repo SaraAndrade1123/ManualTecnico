@@ -1,0 +1,11 @@
+---
+const { platform, username, label } = Astro.props
+import '../styles/global.css'
+---
+<a 
+    href={`https://www.${platform}.com/${username}`} 
+    target="_blank" 
+    class="px-3.5 py-2 md:py-1.5 bg-white border border-[#f5e1e2] text-[11px] md:text-xs text-[#a35c65] rounded-xl hover:bg-[#e6f4f3] hover:text-[#3d6966] hover:border-[#cbdad8] transition-all duration-300 shadow-2xs font-medium flex items-center gap-1.5 transform hover:-translate-y-0.5 active:translate-y-0"
+>
+    <span class="text-[9px] opacity-60">✨</span> {label || platform} 
+</a>
