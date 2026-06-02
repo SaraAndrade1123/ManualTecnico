@@ -4,40 +4,40 @@ const { frontmatter } = Astro.props;
 import '../styles/global.css'
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-    <!-- mx-auto y px-4 perfecto para que no se pegue a los bordes del celular -->
-    <div class="max-w-2xl mx-auto px-4 py-6 md:py-12 bg-[#fffafb] min-h-screen text-[#5c4d50] font-sans">
+    <div class="max-w-2xl mx-auto px-4 py-8 md:py-16 bg-[#fffafb] min-h-screen text-[#5c4d50] font-sans">
         
-        <!-- Botón Volver (Tamaño mobile-friendly cómodo para pulsar con el dedo) -->
-        <div class="mb-6">
-            <a href="/" class="inline-flex items-center gap-2 px-3.5 py-2 bg-white border border-[#cbdad8] rounded-xl text-[11px] font-semibold text-[#3d6966] hover:bg-[#e6f4f3] transition-all active:scale-95 shadow-2xs">
+        <div class="mb-8">
+            <a href="/" class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-[#cbdad8] rounded-xl text-[11px] font-semibold text-[#3d6966] hover:bg-[#e6f4f3] transition-all active:scale-95 shadow-2xs">
                 <span>🩰</span> ִֶ . 𖦹˙ Página principal. 𖦹˙
             </a>
         </div>
 
-        <!-- Cabecera compacta para móviles -->
-        <header class="mb-8 pb-6 border-b border-[#fce4e6] text-center">
+        <header class="mb-10 pb-6 border-b border-[#fce4e6] text-center">
             <div class="inline-block px-2.5 py-0.5 bg-[#fff0f2] border border-[#fce4e6] text-[10px] font-bold uppercase tracking-wider text-[#a86b74] rounded-full mb-3">
                 {frontmatter.tags?.[0] || 'Manual'}
             </div>
-            <h1 class="text-2xl md:text-4xl font-serif font-black text-[#a86b74] leading-tight mb-3">
+            <h1 class="text-2xl md:text-4xl font-serif font-black text-[#a86b74] leading-tight mb-4">
                 {frontmatter.title}
             </h1>
             
             <div class="flex flex-col gap-1.5 pt-3 text-[11px] font-medium text-[#94767b] border-t border-dotted border-[#cbdad8] max-w-sm mx-auto">
                 <span class="flex items-center justify-center gap-1">🎀 Escrito por: <strong class="text-[#a86b74]">{frontmatter.author}</strong></span>
                 <span class="flex items-center justify-center gap-1 text-[#3d6966] font-serif">📅 {frontmatter.pubDate.toString().slice(0,10)}</span>
-                <span class="italic text-[#736063] px-2 leading-tight">✨ {frontmatter.description}</span>
+                <span class="italic text-[#736063] px-2 leading-tight mt-1">✨ {frontmatter.description}</span>
             </div>
         </header>
 
-        <!-- Modificadores prose optimizados para evitar desbordamientos en móviles -->
         <main class="prose max-w-none 
             prose-headings:font-serif prose-headings:font-black
-            prose-h1:text-xl prose-h1:md:text-2xl prose-h1:text-[#3d6966] prose-h1:border-b prose-h1:border-[#cbdad8] prose-h1:pb-1.5 prose-h1:mt-6 prose-h1:mb-4
-            prose-p:text-xs prose-p:leading-relaxed prose-p:text-[#736063]
+            prose-h1:text-xl prose-h1:md:text-2xl prose-h1:text-[#3d6966] prose-h1:border-b prose-h1:border-[#cbdad8] prose-h1:pb-2 prose-h1:mt-8 prose-h1:mb-4
+            prose-h2:text-base prose-h2:text-[#3d6966] prose-h2:mt-6 prose-h2:mb-3
+            prose-h3:text-sm prose-h3:text-[#a86b74] prose-h3:mt-4 prose-h3:mb-2
+            prose-p:text-xs prose-p:leading-relaxed prose-p:text-[#736063] prose-p:mb-4
+            prose-ul:list-disc prose-ul:pl-4 prose-ul:space-y-2 prose-ul:mb-4
+            prose-li:text-xs prose-li:text-[#736063]
             prose-strong:text-[#a86b74] prose-strong:font-semibold
-            prose-pre:bg-[#fff0f2] prose-pre:border prose-pre:border-[#fce4e6] prose-pre:rounded-xl prose-pre:p-3 prose-pre:text-[11px] prose-pre:overflow-x-auto prose-pre:my-2
-            prose-code:text-[#a86b74] prose-code:font-mono prose-code:bg-[#fff0f2]/50 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-[11px]">
+            prose-pre:bg-[#fff0f2] prose-pre:border prose-pre:border-[#fce4e6] prose-pre:rounded-xl prose-pre:p-4 prose-pre:text-[11px] prose-pre:overflow-x-auto prose-pre:my-4 shadow-3xs
+            prose-code:text-[#a86b74] prose-code:font-mono prose-code:bg-[#fff0f2]/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-[11px]">
             
             <slot />
             
