@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="es"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/src/images/diana.svg"><link rel="icon" href="/src/images/diana.ico"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v6.4.2"><title>Astro, .ೀ Layouts</title><link rel="stylesheet" href="/ManualTecnico/_astro/MarkdownAstroLayout.D_XSx9bs.css"></head> <body>  <div class="max-w-2xl mx-auto px-4 py-8 md:py-16 bg-[#fffafb] min-h-screen text-[#5c4d50] font-sans"> <div class="mb-8"> <a href="/" class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-[#cbdad8] rounded-xl text-[11px] font-semibold text-[#3d6966] hover:bg-[#e6f4f3] transition-all active:scale-95 shadow-2xs"> <span>🩰</span> ִֶ . 𖦹˙ Página principal. 𖦹˙
+</a> </div> <header class="mb-10 pb-6 border-b border-[#fce4e6] text-center"> <div class="inline-block px-2.5 py-0.5 bg-[#fff0f2] border border-[#fce4e6] text-[10px] font-bold uppercase tracking-wider text-[#a86b74] rounded-full mb-3"> Astro </div> <h1 class="text-2xl md:text-4xl font-serif font-black text-[#a86b74] leading-tight mb-4"> .ೀ Layouts </h1> <div class="flex flex-col gap-1.5 pt-3 text-[11px] font-medium text-[#94767b] border-t border-dotted border-[#cbdad8] max-w-sm mx-auto"> <span class="flex items-center justify-center gap-1">🎀 Escrito por: <strong class="text-[#a86b74]">Sara Andrade</strong></span> <span class="flex items-center justify-center gap-1 text-[#3d6966] font-serif">📅 2026-06-01</span> <span class="italic text-[#736063] px-2 leading-tight mt-1">✨ Esta es la primera publicación, sobre conceptos de layouts en Astro</span> </div> </header> <main class="prose max-w-none 
+            prose-headings:font-serif prose-headings:font-black
+            prose-h1:text-xl prose-h1:md:text-2xl prose-h1:text-[#3d6966] prose-h1:border-b prose-h1:border-[#cbdad8] prose-h1:pb-2 prose-h1:mt-8 prose-h1:mb-4
+            prose-h2:text-base prose-h2:text-[#3d6966] prose-h2:mt-6 prose-h2:mb-3
+            prose-h3:text-sm prose-h3:text-[#a86b74] prose-h3:mt-4 prose-h3:mb-2
+            prose-p:text-xs prose-p:leading-relaxed prose-p:text-[#736063] prose-p:mb-4
+            prose-ul:list-disc prose-ul:pl-4 prose-ul:space-y-2 prose-ul:mb-4
+            prose-li:text-xs prose-li:text-[#736063]
+            prose-strong:text-[#a86b74] prose-strong:font-semibold
+            prose-pre:bg-[#fff0f2] prose-pre:border prose-pre:border-[#fce4e6] prose-pre:rounded-xl prose-pre:p-4 prose-pre:text-[11px] prose-pre:overflow-x-auto prose-pre:my-4 shadow-3xs
+            prose-code:text-[#a86b74] prose-code:font-mono prose-code:bg-[#fff0f2]/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-[11px]"> <h1 id="dentro-del-encarpetado-de-tu-proyecto"><strong>Dentro del encarpetado de tu proyecto</strong></h1>
+<p>Para facilitar la creación de tu página web, puedes crear un <code>BaseLayout</code>. El objetivo es tener una base común para tus páginas individuales para que, al añadir una nueva, no tengas que reescribir todo el esqueleto HTML. Además, puedes guardar en él la estructura completa y elementos globales.</p>
+<div class="space-y-8 max-w-2xl mx-auto my-8">
+  <div class="bg-white border border-[#cbdad8]/60 rounded-2xl p-6 shadow-3xs hover:border-[#3d6966] transition-all text-center">
+    <h3 class="text-sm font-serif font-bold text-[#3d6966] mb-3 flex items-center justify-center gap-1.5">
+      <span>✦ 1 y 2.</span> Creación de la carpeta
+    </h3>
+    <p class="text-xs text-[#736063] mb-3">Posiciónate en la carpeta <code>src/</code> y crea la carpeta de layouts:</p>
+    <div class="bg-[#f4faf9] text-[#3d6966] font-mono text-xs p-2 rounded-xl inline-block border border-[#cbdad8]/40 mb-4 px-4">
+      layouts/
+    </div>
+    <p class="text-xs text-[#736063] mb-3">Dentro, agrega tu primer archivo layout con un nombre distintivo, por ejemplo:</p>
+    <div class="bg-[#f4faf9] text-[#3d6966] font-mono text-xs p-2 rounded-xl inline-block border border-[#cbdad8]/40 px-4">
+      BaseLayout.astro
+    </div>
+  </div>
+  <div class="bg-white border border-[#fce4e6] rounded-2xl p-6 shadow-3xs hover:border-[#a86b74] transition-all text-center">
+    <h3 class="text-sm font-serif font-bold text-[#a86b74] mb-3 flex items-center justify-center gap-1.5">
+      <span>✦ 3.</span> El Frontmatter del Layout
+    </h3>
+    <p class="text-xs text-[#736063] mb-4">Al inicio del archivo separamos la sección de JavaScript mediante guiones donde se importarán componentes u hojas de estilo:</p>
+<div class="bg-[#fcf8f8] text-[#a86b74] font-mono text-xs p-4 rounded-xl inline-block text-left border border-[#fce4e6]/40">
+      <div>---</div>
+      <div class="text-[#736063] italic">  // Aquí se importan los componentes y estilos</div>
+      <div>---</div>
+    </div>
+  </div>
+</div>
+<div class="my-12 text-center text-[#cbdad8]">✦ ─── 🎀 ─── ✦</div>
+<h1 id="creación-y-estructura"><strong>Creación y Estructura</strong></h1>
+<div class="space-y-8 max-w-2xl mx-auto my-6">
+  <div class="bg-white border border-[#cbdad8]/60 rounded-2xl p-6 shadow-3xs hover:border-[#3d6966] transition-all text-center">
+    <h3 class="text-sm font-serif font-bold text-[#3d6966] mb-3 flex items-center justify-center gap-1.5">
+      <span>✦ 1.</span> Importación y Props
+    </h3>
+    <p class="text-xs text-[#736063] mb-4">En la parte interna de los guiones <code>---</code>, puedes importar componentes como <code>Footer.astro</code>, <code>Header.astro</code>, etc. También se definen constantes para recibir propiedades dinámicas:</p>
+ <div class="bg-[#f4faf9] text-[#3d6966] font-mono text-xs p-4 rounded-xl inline-block text-left border border-[#cbdad8]/40">
+      const { frontmatter } = Astro.props;
+    </div>
+  </div>
+  <div class="bg-white border border-[#fce4e6] rounded-2xl p-6 shadow-3xs hover:border-[#a86b74] transition-all text-center">
+    <h3 class="text-sm font-serif font-bold text-[#a86b74] mb-3 flex items-center justify-center gap-1.5">
+      <span>✦ 2.</span> Estructura del Cuerpo
+    </h3>
+    <p class="text-xs text-[#736063] mb-4">El cuerpo del archivo compone la estructura HTML. Integras las etiquetas normales y los componentes personalizados que importaste:</p>
+<div class="bg-[#fcf8f8] text-[#a86b74] font-mono text-xs p-3 rounded-xl inline-block border border-[#fce4e6]/40">
+      &#x3C;Footer />
+    </div>
+  </div>
+</div>
+<div class="my-12 text-center text-[#cbdad8]">✦ ─── 🎀 ─── ✦</div>
+<h1 id="uso-del-layout-en-un-page"><strong>Uso del layout en un page</strong></h1>
+<div class="space-y-8 max-w-2xl mx-auto my-6">
+  <div class="bg-white border border-[#fce4e6] rounded-2xl p-6 shadow-3xs hover:border-[#a86b74] transition-all text-center">
+    <h3 class="text-sm font-serif font-bold text-[#a86b74] mb-3 flex items-center justify-center gap-1.5">
+      <span>✦ Paso a Paso</span>
+    </h3>
+<p class="text-xs text-[#736063] mb-2 text-left"><strong>1. Importar el Layout:</strong> En el archivo donde vas a utilizarlo (ej. <code>index.astro</code>), añade la importación en la sección de arriba:</p>
+    <div class="bg-[#fcf8f8] text-[#a86b74] font-mono text-xs p-3 rounded-xl block text-left border border-[#fce4e6]/40 mb-4 overflow-x-auto">
+      import BaseLayout from '../layouts/BaseLayout.astro';
+    </div>
+<p class="text-xs text-[#736063] mb-2 text-left"><strong>2. Envolver el contenido:</strong> Llamas al layout pasando las constantes necesarias y escribes tu contenido dentro de él de manera normal:</p>
+    <div class="bg-[#fcf8f8] text-[#a86b74] font-mono text-xs p-4 rounded-xl block text-left border border-[#fce4e6]/40 overflow-x-auto">
+      &#x3C;BaseLayout pageTitle={pageTitle}><br>
+          &#x3C;p>¡Este es el contenido de mi página!&#x3C;/p><br>
+      &#x3C;/BaseLayout>
+    </div>
+<div class="bg-[#e6f4f3] text-[#3d6966] rounded-xl p-3 text-xs font-medium text-center mx-auto max-w-md mt-4 shadow-3xs">
+      💡 <strong>Nota sobre pageTitle:</strong> Al llamarla, pasará el título dinámicamente. Verifica que tenga exactamente el mismo nombre tanto en la declaración como en el componente.
+    </div>
+  </div>
+</div>
+<div class="text-center pt-8 pb-4 text-xs font-serif font-bold italic text-[#b89198] tracking-widest">
+    ───  Fin  ───
+</div> </main> </div>  <footer class="mt-16 pt-8 pb-10 border-t border-[#fce4e6] text-center bg-[#fff5f6] rounded-t-3xl"> <div id="redes" class="flex flex-wrap justify-center gap-2 md:gap-3 mb-6 px-4 max-w-xl mx-auto"> <a href="https://www.github.com/SaraAndrade1123" target="_blank" class="px-3.5 py-2 md:py-1.5 bg-white border border-[#f5e1e2] text-[11px] md:text-xs text-[#a35c65] rounded-xl hover:bg-[#e6f4f3] hover:text-[#3d6966] hover:border-[#cbdad8] transition-all duration-300 shadow-2xs font-medium flex items-center gap-1.5 transform hover:-translate-y-0.5 active:translate-y-0"> <span class="text-[9px] opacity-60">✨</span> GitHub </a> </div> <small class="text-[11px] md:text-xs font-serif font-bold text-[#b89198] tracking-widest uppercase block px-4">──
+        &copy; Sara Andrade Rodríguez 2026 ── <span class="text-[#3d6966]"></span> </small> </footer> </body></html>

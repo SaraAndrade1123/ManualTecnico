@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="es"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/src/images/diana.svg"><link rel="icon" href="/src/images/diana.ico"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v6.4.2"><title>Astro, .ೀ Posts &amp; Pages</title><link rel="stylesheet" href="/ManualTecnico/_astro/MarkdownAstroLayout.D_XSx9bs.css"></head> <body>  <div class="max-w-2xl mx-auto px-4 py-8 md:py-16 bg-[#fffafb] min-h-screen text-[#5c4d50] font-sans"> <div class="mb-8"> <a href="/" class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-[#cbdad8] rounded-xl text-[11px] font-semibold text-[#3d6966] hover:bg-[#e6f4f3] transition-all active:scale-95 shadow-2xs"> <span>🩰</span> ִֶ . 𖦹˙ Página principal. 𖦹˙
+</a> </div> <header class="mb-10 pb-6 border-b border-[#fce4e6] text-center"> <div class="inline-block px-2.5 py-0.5 bg-[#fff0f2] border border-[#fce4e6] text-[10px] font-bold uppercase tracking-wider text-[#a86b74] rounded-full mb-3"> Astro </div> <h1 class="text-2xl md:text-4xl font-serif font-black text-[#a86b74] leading-tight mb-4"> .ೀ Posts &amp; Pages </h1> <div class="flex flex-col gap-1.5 pt-3 text-[11px] font-medium text-[#94767b] border-t border-dotted border-[#cbdad8] max-w-sm mx-auto"> <span class="flex items-center justify-center gap-1">🎀 Escrito por: <strong class="text-[#a86b74]">Sara Andrade</strong></span> <span class="flex items-center justify-center gap-1 text-[#3d6966] font-serif">📅 2026-06-01</span> <span class="italic text-[#736063] px-2 leading-tight mt-1">✨ Esta es la publicación sobre conceptos fundamentales de Pages y Posts en Astro</span> </div> </header> <main class="prose max-w-none 
+            prose-headings:font-serif prose-headings:font-black
+            prose-h1:text-xl prose-h1:md:text-2xl prose-h1:text-[#3d6966] prose-h1:border-b prose-h1:border-[#cbdad8] prose-h1:pb-2 prose-h1:mt-8 prose-h1:mb-4
+            prose-h2:text-base prose-h2:text-[#3d6966] prose-h2:mt-6 prose-h2:mb-3
+            prose-h3:text-sm prose-h3:text-[#a86b74] prose-h3:mt-4 prose-h3:mb-2
+            prose-p:text-xs prose-p:leading-relaxed prose-p:text-[#736063] prose-p:mb-4
+            prose-ul:list-disc prose-ul:pl-4 prose-ul:space-y-2 prose-ul:mb-4
+            prose-li:text-xs prose-li:text-[#736063]
+            prose-strong:text-[#a86b74] prose-strong:font-semibold
+            prose-pre:bg-[#fff0f2] prose-pre:border prose-pre:border-[#fce4e6] prose-pre:rounded-xl prose-pre:p-4 prose-pre:text-[11px] prose-pre:overflow-x-auto prose-pre:my-4 shadow-3xs
+            prose-code:text-[#a86b74] prose-code:font-mono prose-code:bg-[#fff0f2]/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-[11px]"> <h1 id="utilizar-posts-y-pages"><strong>Utilizar posts y pages</strong></h1>
+<p>En Astro es fundamental comprender la diferencia entre dos tipos de archivos clave para el flujo de trabajo:</p>
+<div class="space-y-6 max-w-2xl mx-auto my-8">
+  <div class="bg-white border border-[#fce4e6] rounded-2xl p-6 shadow-3xs hover:border-[#a86b74] transition-all">
+    <h3 class="text-sm font-serif font-bold text-[#a86b74] mb-3 flex items-center gap-2">
+      <span>📝</span> 1. Los Posts (Archivos Markdown)
+    </h3>
+    <p class="text-xs text-[#736063] leading-relaxed mb-3">
+      Markdown es un lenguaje de marcado ligero diseñado para facilitar la lectura y escritura de documentos de texto plano, permitiendo además su conversión a HTML estructurado.
+    </p>
+    <div class="bg-[#fff0f2] border-l-4 border-[#a86b74] rounded-r-xl p-3 text-xs italic text-[#94767b]">
+      ✨ <strong>Nota:</strong> Estos archivos se utilizan para escribir contenido (blogs, documentación, artículos). Están pensados principalmente para redactar texto de forma cómoda, no para programar.
+    </div>
+  </div>
+  <div class="bg-white border border-[#cbdad8]/60 rounded-2xl p-6 shadow-3xs hover:border-[#3d6966] transition-all">
+    <h3 class="text-sm font-serif font-bold text-[#3d6966] mb-3 flex items-center gap-2">
+      <span>🚀</span> 2. Los Pages (Archivos .astro)
+    </h3>
+    <p class="text-xs text-[#736063] leading-relaxed mb-3">
+      Siguen el flujo estructural de la aplicación. Su propósito principal es crear páginas con lógica, componentes modulares y JavaScript cuando sea necesario.
+    </p>
+    <p class="text-xs text-[#736063] mb-4">
+      Puedes importar componentes de Astro, React, Vue, etc. Son ideales para la página de inicio (home), páginas dinámicas o layouts personalizados.
+    </p>
+    <div class="bg-[#e6f4f3] text-[#3d6966] rounded-xl p-3 text-xs font-medium border border-[#cbdad8]/40">
+      💡 <strong>Enrutamiento Basado en Archivos:</strong> Cada archivo dentro de la carpeta <code>src/pages/</code> se convierte automáticamente en una ruta URL de tu sitio web.
+    </div>
+  </div>
+</div>
+<h3 id="ejemplo-de-navegación-en-pages"><strong>Ejemplo de navegación en Pages</strong></h3>
+<p>La navegación tradicional entre páginas se realiza mediante etiquetas clásicas de hipervínculo que conectan tus rutas internas:</p>
+<pre class="bg-[#fcf8f8] text-[#a86b74] font-mono text-xs p-4 rounded-xl border border-[#fce4e6]/40 overflow-x-auto max-w-2xl mx-auto text-left mb-8"><code>---
+// src/pages/index.astro
+---
+&#x3C;h1>Inicio&#x3C;/h1>
+
+&#x3C;nav>
+  &#x3C;a href="/about">Sobre mí&#x3C;/a>
+  &#x3C;a href="/contacto">Contacto&#x3C;/a>
+&#x3C;/nav></code></pre>
+<hr>
+<h1 id="estructuras"><strong>Estructuras</strong></h1>
+<h2 id="1-posts"><strong>1. Posts</strong></h2>
+<p>La estructura de los posts simula una bitácora y lleva una configuración previa en el bloque superior (frontmatter). Incluye un enlace al layout correspondiente que le da forma general al texto:</p>
+<pre class="bg-[#fcf8f8] text-[#a86b74] font-mono text-xs p-4 rounded-xl border border-[#fce4e6]/40 overflow-x-auto max-w-2xl mx-auto text-left mb-6"><code>---
+layout: ../../layouts/MarkdownAstroLayout.astro
+title: '.ೀ Posts &#x26; Pages'
+pubDate: 2026-06-01
+description: 'Esta es la primera publicación, sobre conceptos de Pages en Astro'
+author: 'Sara Andrade'
+image1:
+  url1: ''
+  alt1: 'Astro'
+tags: ["Astro","Páginas web","Aprender"]
+---</code></pre>
+<h3 id="renderizado-automático"><strong>Renderizado Automático</strong></h3>
+<p>En el index de tu página (o donde decidas listar tus publicaciones), se utiliza la siguiente estructura lógica con JavaScript para importar y mapear dinámicamente cada archivo <code>.md</code> creado sin tener que agregarlos manualmente:</p>
+<div class="space-y-4 max-w-2xl mx-auto my-6">
+  <pre class="bg-[#f4faf9] text-[#3d6966] font-mono text-xs p-4 rounded-xl border border-[#cbdad8]/40 overflow-x-auto text-left"><code>---
+const allAstro = Object.values(import.meta.glob('./posts/*.md', {eager: true}));
+---</code></pre>
+  <div class="bg-white border border-[#cbdad8]/60 rounded-2xl p-6 shadow-3xs">
+    <h3 class="text-xs md:text-sm font-serif font-bold uppercase tracking-wider text-[#94767b] mb-4 text-center">
+      Ejemplo de posts:
+    </h3>
+    <ul>
+{allAstro.map((astro: any) => 
+<p>(
+&#x3C;“li”>
+&#x3C;“a” href={astro.url}></p>
+<p>🩰 {astro.frontmatter.title}
+&#x3C;/“a”>
+&#x3C;/“li”></p>
+<p>))}
+</p></ul><p></p>
+  </div>
+</div>
+<h2 id="2-pages"><strong>2. Pages</strong></h2>
+<p>La estructura en los <code>pages</code> es muy similar a la que maneja tu archivo raíz <code>index.astro</code>. Para optimizar código, se emplea un layout base común (<code>BaseLayout.astro</code>).</p>
+<p class="text-xs text-[#736063] italic bg-[#fff0f2] border border-[#fce4e6] rounded-xl p-3 my-6 text-center max-w-2xl mx-auto">
+  🏰 <strong>Analogía:</strong> En tu proyecto, <code>index.astro</code> actúa como la puerta principal de la casa. Los enlaces (<code>&#x3C;a href=""></code>) representan los pasillos que conectan los cuartos independientes, que vienen siendo tus archivos dentro de <strong>pages</strong>.
+</p>
+<p>Gracias a esta base común, evitas reescribir la estructura fundamental de HTML (esqueleto) y el llamado manual de tus componentes recurrentes como el <code>Header</code> o el <code>Footer</code>.</p>
+<div class="text-center pt-12 pb-4 text-xs font-serif font-bold italic text-[#b89198] tracking-widest">
+    ───  Fin  ───
+</div> </main> </div>  <footer class="mt-16 pt-8 pb-10 border-t border-[#fce4e6] text-center bg-[#fff5f6] rounded-t-3xl"> <div id="redes" class="flex flex-wrap justify-center gap-2 md:gap-3 mb-6 px-4 max-w-xl mx-auto"> <a href="https://www.github.com/SaraAndrade1123" target="_blank" class="px-3.5 py-2 md:py-1.5 bg-white border border-[#f5e1e2] text-[11px] md:text-xs text-[#a35c65] rounded-xl hover:bg-[#e6f4f3] hover:text-[#3d6966] hover:border-[#cbdad8] transition-all duration-300 shadow-2xs font-medium flex items-center gap-1.5 transform hover:-translate-y-0.5 active:translate-y-0"> <span class="text-[9px] opacity-60">✨</span> GitHub </a> </div> <small class="text-[11px] md:text-xs font-serif font-bold text-[#b89198] tracking-widest uppercase block px-4">──
+        &copy; Sara Andrade Rodríguez 2026 ── <span class="text-[#3d6966]"></span> </small> </footer> </body></html>
